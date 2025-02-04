@@ -18,8 +18,12 @@ const VideoContainer = () => {
     const getVideos = async () => {
         const vedios = await fetch(YOUTUBE_VIDEOS_API);
         const response = await vedios.json();
-        setVideos(response.items);
-        setLoading(false);
+        if (response?.items?.length > 0) {
+            setVideos(response.items);
+            setLoading(false);
+        } else {
+            setLoading(true);
+        }
     };
 
     // Early Return
