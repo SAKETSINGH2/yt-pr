@@ -2,21 +2,21 @@ import React from "react";
 
 const ButtonList = () => {
     return (
-        <div>
-            <ul className="flex justify-around font-semibold text-[1rem] p-4">
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
-                <li className="bg-gray-200 rounded-md py-1 px-2">Cricket</li>
+        <div className="sm:overflow-x-auto">
+            <ul className="flex font-semibold text-[1rem] p-4 gap-2">
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
+                <li className="bg-gray-200 rounded-md py-1 px-4">Cricket</li>
             </ul>
         </div>
     );

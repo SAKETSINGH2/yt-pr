@@ -4,7 +4,6 @@ import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import WatchPage from "./components/WatchPage";
 import VideoContainer from "./components/VideoContainer";
-import SearchVideosCard from "./components/SearchVideosCard";
 import SearchVideosList from "./components/SearchVideosList";
 
 function App() {
@@ -34,14 +33,7 @@ function App() {
             ],
         },
     ]);
-    return (
-        <RouterProvider router={appRouter} />
-
-        // <div className="scrollbar-hide overflow-y-auto h-screen">
-        //     <Head />
-        //     <Body />
-        // </div>
-    );
+    return <RouterProvider router={appRouter} />;
 }
 
 export default App;

@@ -3,7 +3,7 @@ import React from "react";
 const ShimmerButtonList = () => {
     return (
         <div>
-            <ul className="flex justify-around gap-2">
+            <ul className="flex flex-wrap justify-center gap-2">
                 {Array(10)
                     .fill("")
                     .map((_, index) => (

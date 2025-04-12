@@ -40,10 +40,10 @@ const VideoContainer = () => {
 
     return (
         <div className="shadow-xl">
-            <div className="sticky top-0 bg-white">
+            <div className="sticky top-0 bg-white overflow-auto">
                 <ButtonList />
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center p-1">
                 {videos.map((data) => (
                     <Link to={"/watch?v=" + data.id}>
                         <VideoCard video={data} />

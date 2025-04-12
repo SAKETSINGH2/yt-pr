@@ -6,10 +6,10 @@ const VideoCard = ({ video }) => {
     let maxTitleLength = 50;
 
     return (
-        <div className="w-[300px] rounded-xl m-2">
+        <div className="w-full sm:w-[300px] lg:w-[360px] rounded-xl p-1">
             <img
-                className="rounded-md"
-                src={thumbnails.standard.url}
+                className="w-full rounded-md"
+                src={thumbnails.standard?.url}
                 alt="thumbnail"
                 loading="lazy"
             />
@@ -19,21 +19,27 @@ const VideoCard = ({ video }) => {
                     src={thumbnails.default.url}
                     alt="profile-image"
                 />
-                <p className="font-semibold">
+                <p className="font-semibold text-ellipsis overflow-hidden max-w-full sm:max-w-[240px]">
                     {title.length <= maxTitleLength ? (
-                        <p>{title}</p>
+                        <span>{title}</span>
                     ) : (
-                        <p>{title.slice(0, maxTitleLength) + "..."}</p>
+                        <span>{title.slice(0, maxTitleLength) + "..."}</span>
                     )}
                 </p>
             </div>
 
-            <p className="text-gray-700 ml-16">{channelTitle}</p>
+            <p className="text-gray-700 ml-16 text-sm sm:text-base">
+                {channelTitle}
+            </p>
             <p className="text-gray-700 ml-16 text-[13px]">
                 {statistics.viewCount > 1000000 ? (
-                    <p>{Math.floor(statistics.viewCount / 1000000)}M views</p>
+                    <span>
+                        {Math.floor(statistics.viewCount / 1000000)}M views
+                    </span>
                 ) : (
-                    <p>{Math.floor(statistics.viewCount / 1000)}K views</p>
+                    <span>
+                        {Math.floor(statistics.viewCount / 1000)}K views
+                    </span>
                 )}
             </p>
         </div>
